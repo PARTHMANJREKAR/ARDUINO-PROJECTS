@@ -1,51 +1,49 @@
 **Installation instructions**
-If you’re using a Chromebook, see Use Arduino with Chromebook.
 
 **Windows**
 Download the latest release (The download will start after you click this link. Check your browser’s download manager or the Downloads folder on your computer to find the downloaded file)
 Double-click the executable (.exe) file.
 Follow the instructions in the installation guide.
 When completing the setup, leave Run Arduino IDE ticked to launch the application, or launch it later from the Start Menu.
-macOS
+
+**MacOS**
 Download the latest release (The download will start after you click this link. Check your browser’s download manager or the Downloads folder on your computer to find the downloaded file)
 Double-click the disk image (.dmg) file.
 Drag and drop the Arduino IDE application into the Applications folder.
 Launch Arduino IDE the same way you would launch any other application (such as ⌘ + Space for Spotlight and search for “Arduino”).
 
 **Linux**
-Download the latest release
+--> Download the latest release
 
-Find the AppImage file in your file manager.
+--> Find the AppImage file in your file manager.
 
-Make the AppImage file executable:
+--> Make the AppImage file executable:
 
-Right-click the file.
-Choose Properties,
-Select the Permissions.
-Tick the Allow executing file as program box.
-Double-click the AppImage file to launch Arduino IDE.
+--> Right-click the file.
+--> Choose Properties,
+--> Select the Permissions.
+--> Tick the Allow executing file as program box.
+--> Double-click the AppImage file to launch Arduino IDE.
 
-If Arduino IDE fails to open, and you see the text dlopen(): error loading libfuse.so.2 or AppImages require FUSE to run, you may be missing some dependencies[1]. Follow these steps:
+**If Arduino IDE fails to open, and you see the text dlopen(): error loading libfuse.so.2 or AppImages require FUSE to run, you may be missing some dependencies[1].**
 
-Open the Terminal application.
+Follow these steps:
 
-Enter this command:
+--> Open the Terminal application.
+
+--> Enter this command:
 
 sudo apt-get -y install libfuse2
 
-Press Enter and wait for the process to complete.
+--> Press Enter and wait for the process to complete.
 
-Close the Terminal window.
+--> Close the Terminal window.
 
-Try launching Arduino IDE again by double-clicking the AppImage file.
+--> Try launching Arduino IDE again by double-clicking the AppImage file.
 
-Additional download options
+**Additional download options**
 For a portable installation on Windows or Linux, use a “ZIP file” option:
-
-ZIP file (Windows)
-ZIP file 64 bits (X86-64) (Linux)
-For more control in mass deployment, use the MSI installer package (Windows Installer) file.
-
-Nightly builds – preview incoming releases.
-
-IDE 1 (legacy)
+-->
+   ZIP file (Windows)
+   ZIP file 64 bits (X86-64) (Linux)
+--> For more control in mass deployment, use the MSI installer package (Windows Installer) file.
