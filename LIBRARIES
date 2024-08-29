@@ -1,0 +1,19 @@
+Arduino & ESP-32 Dev mod/Cam Libraries -->
+
+https://github.com/adafruit/Adafruit-GFX-Library.git
+
+https://github.com/adafruit/Adafruit_SSD1306.git
+
+https://github.com/adafruit/Adafruit_LSM303DLHC.git
+
+https://github.com/adafruit/Adafruit_BNO055.git
+
+https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library.git
+
+https://github.com/adafruit/DHT-sensor-library.git
+
+https://github.com/ldc-developers/dmd-testsuite.git
+
+https://github.com/rodan/ds3231.git
+
+https://github.com/plerup/espsoftwareserial.git
