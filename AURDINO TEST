@@ -1,3 +1,17 @@
+** Make the blink LED example **
+
+Now that you have the circuit and the IDE to setup the LED, let’s do something a bit more interesting.
+
+Let’s make the LED blink, which means that we are going to:
+
+Power on the LED,
+wait,
+Power off the LED,
+wait,
+Go back to 1.
+Here’s the code to do that (using our LED connected to digital pin 13 (RED_LED) ).
+
+
 #define LED_PIN 13
 void setup()
 {
@@ -10,3 +24,40 @@ void loop()
   digitalWrite(LED_PIN, LOW);
   delay(2000); 
 }
+
+Let’s break down this code line by line.
+**
+#define LED_PIN 13
+**
+This is the same as before. We create a define so we can use the pin number later on in the code without having to hard-coding it.
+
+**
+void setup()
+{
+  pinMode(LED_PIN, OUTPUT);
+}
+
+**
+In the void setup(), we initialize the mode for the pin to OUTPUT. Note that this is the only thing we do here.
+**
+void loop()
+{
+  digitalWrite(LED_PIN, HIGH);
+  delay(500);
+  digitalWrite(LED_PIN, LOW);
+  delay(500); 
+}
+**
+
+And in the void loop(), we handle the blink mechanism. First we power on the LED with digitalWrite() and HIGH, then we wait using delay(). 
+The delay() function will block the program for a given amount of time (in milliseconds). 
+So, here, we block the program for 2000 milliseconds, or 2 second.
+
+After that, we power off the LED with digitalWrite() and LOW, and wait again for 2 seconds using delay(). 
+This way, we have a complete cycle of “LED powered on” + “LED powered off”.
+
+Once we exit the void loop(), it is called again, and thus the LED is powered on again.
+
+This blink example is maybe one of the most common examples, but also super useful when you get started with Arduino. 
+If you correctly understand the circuit and the code, you’ve already made big progress.
+
